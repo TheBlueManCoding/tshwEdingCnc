@@ -11,3 +11,5 @@ To install the software just install CircuitPython onto your Raspberry. Then cop
 
 The current version uses inputs 0 to 9 - the order isn't straight as i did some mistakes in my hardware and fixed it in software.
 But the pins are set up in a table and its easy to change the pinout.
+
+![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
