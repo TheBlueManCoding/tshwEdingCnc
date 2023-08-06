@@ -1,8 +1,36 @@
 # Tom simple handrad für EdingCnc
 ## Grundfunktion:
-  -  der Drehgeber wird direkt mit den Eingängen der Steuerplatine verbunden
-  -  der Notaus wird direkt mit der Steuerung verbunden
-  -  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software
+  1.  Der Drehgeber wird direkt mit den Eingängen der Eding Anschlussplatine verbunden.
+  * +5V 
+  * GND
+  * HANDWHEEL A
+  * HANDWHEEL B
+  2.  Der Notaus wird direkt mit der Steuerung verbunden, paralell zum normalen Notaus. Die Steuerung muss in dieser Konfiguration auf NO konfiguriert werden. 
+  * ESTOP
+  * GND
+  3. Die 10 Funktionstasten des Handrades werden direkt mit den Eingängen des PiPico verbunden:
+
+| Eingang        | Funktion |
+| ------------- |:-------------:|
+| GP6 | X Achse |
+| GP5 | Y Achse |
+| GP4 | Z Achse |
+| GP3 | 1mm/Umdrehung |
+| GP2 | 10mm/Umdrehung |
+| GP1 | 100mm/Umdrehung |
+| GP8 | Start (grün) |
+| GP0 | Automatik (Verlassen des Jog-Modus) |
+| GP9 | Stop (rot) |
+| GP7 | Seitentaste |
+
+Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentaste gedrückt werden.
+
+  4.  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software. Dazu wird der USB Anschluss des PiPico direkt mit dem PC verbunden.
+  5.  Softwarevorbereitung:
+  * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
+  * 
+
+
 
 
 
