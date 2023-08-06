@@ -1,3 +1,5 @@
+[English version](#english)
+
 # Deutsch
 ## Tom simple handrad für EdingCnc mit dem Rasberry-Pi Pico
 ### Grundfunktion:
