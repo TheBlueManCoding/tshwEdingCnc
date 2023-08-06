@@ -28,7 +28,7 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
   4.  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software. Dazu wird der USB Anschluss des PiPico direkt mit dem PC verbunden.
   5.  Softwarevorbereitung:
   * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
-  * 
+  * Als Nächstes müssen die Dateien im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
 
 
 
