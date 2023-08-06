@@ -1,13 +1,14 @@
-# Tom simple handrad für EdingCnc
-## Grundfunktion:
+# Deutsch
+## Tom simple handrad für EdingCnc mit dem Rasberry-Pi Pico
+### Grundfunktion:
   1.  Der Drehgeber wird direkt mit den Eingängen der Eding Anschlussplatine verbunden.
-  * +5V 
-  * GND
-  * HANDWHEEL A
-  * HANDWHEEL B
+   * +5V 
+   * GND
+   * HANDWHEEL A
+   * HANDWHEEL B
   2.  Der Notaus wird direkt mit der Steuerung verbunden, paralell zum normalen Notaus. Die Steuerung muss in dieser Konfiguration auf NO konfiguriert werden. 
-  * ESTOP
-  * GND
+   * ESTOP
+   * GND
   3. Die 10 Funktionstasten des Handrades werden direkt mit den Eingängen des PiPico verbunden:
 
 | Eingang | Funktion |
@@ -27,27 +28,54 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
 
   4.  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software. Dazu wird der USB Anschluss des PiPico direkt mit dem PC verbunden.
   5.  Softwarevorbereitung:
-  * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
-  * Als Nächstes müssen die [Dateien](https://github.com/TheBlueManCoding/tshwEdingCnc/tree/main/src) im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
-![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/67d1aaba23f07c7498afed532d94e842163adbea/img/FolderStructure.png)
+   * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
+   * Als Nächstes müssen die [Dateien](https://github.com/TheBlueManCoding/tshwEdingCnc/tree/main/src) im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
+![Soll-Ordnerstruktur](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/67d1aaba23f07c7498afed532d94e842163adbea/img/FolderStructure.png)
 
 
 
 
 
-![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
-![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Handrad_innen.jpg)
+![Handrad, Draufsicht](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
+![Handrad, geöffnet](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Handrad_innen.jpg)
 
-# Tom simple handwheel for EdingCnc
+# English
+## Tom simple handweel für EdingCnc using the Rasberry-Pi Pico
+### Functionality:
+  1.  The rotary encoder is directly connected to the inputs of the eding-cnc circuit board.
+   * +5V 
+   * GND
+   * HANDWHEEL A
+   * HANDWHEEL B
+  2.  The emergency stop is connected in parallel to the other emergency stops. The controller input has to be configured to NO (normally-open). 
+   * ESTOP
+   * GND
+  3. The 10 buttons of the handweel are directly connected to the picos input pins:
 
-This software is written in CircuitPython for RP2040.
+| input | function |
+| --- |:-------------:|
+| GP6 | X Axis |
+| GP5 | Y Axis |
+| GP4 | Z Axis |
+| GP3 | 1mm/rotation |
+| GP2 | 10mm/rotation |
+| GP1 | 100mm/rotation |
+| GP8 | start (green) |
+| GP0 | automatic (leave the Jog-mode) |
+| GP9 | stop (red) |
+| GP7 | side-button |
 
-It uses the keyboard emulation and all the avaliable shortcuts in EdingCnc to get the buttons working.
-The encoder is directly connected to the encoder input of the cpu board. The emergency stop is connected to one of the estop inputs.
+The keys start and stop only work if pressed simultaneously with the side-button.
 
-As the RP2040 has enough input pins, every button is directly connected to one input and just switches the input to low. Its that simple.
+  4.  The keys of the handweel directly send inputs to the computer using the adafruit-hid libary. For that the Pico has to be directly connected to the PC via its USB connector and a micro-USB cable.
+  5.  Preparation of the Pico:
+   * Installation-process of Circuit-Python on the Pico: [Link](https://www.diyprojectslab.com/raspberry-pi-pico-with-circuitpython/)
+   * Next the [Files](https://github.com/TheBlueManCoding/tshwEdingCnc/tree/main/src) from the Repository have to be copied to the drive of the Pico (root directory)
+![example for a right set up pico](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/67d1aaba23f07c7498afed532d94e842163adbea/img/FolderStructure.png)
 
-To install the software just install CircuitPython onto your Raspberry. Then copy all files in the "src" of this repo onto the raspberry.
 
-The current version uses inputs 0 to 9 - the order isn't straight as i did some mistakes in my hardware and fixed it in software.
-But the pins are set up in a table and its easy to change the pinout.
+
+
+
+![Handwheel, closed](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
+![Handwheel, opened](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Handrad_innen.jpg)
