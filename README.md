@@ -29,11 +29,14 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
   5.  Softwarevorbereitung:
   * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
   * Als Nächstes müssen die Dateien im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
+![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/67d1aaba23f07c7498afed532d94e842163adbea/img/FolderStructure.png)
 
 
 
 
 
+![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
+![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Handrad_innen.jpg)
 
 # Tom simple handwheel for EdingCnc
 
@@ -48,5 +51,3 @@ To install the software just install CircuitPython onto your Raspberry. Then cop
 
 The current version uses inputs 0 to 9 - the order isn't straight as i did some mistakes in my hardware and fixed it in software.
 But the pins are set up in a table and its easy to change the pinout.
-
-![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Layout.jpg)
