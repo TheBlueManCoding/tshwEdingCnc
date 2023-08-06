@@ -1,3 +1,12 @@
+# Tom simple handrad für EdingCnc
+## Grundfunktion:
+  -  der Drehgeber wird direkt mit den Eingängen der Steuerplatine verbunden
+  -  der Notaus wird direkt mit der Steuerung verbunden
+  -  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software
+
+
+
+
 # Tom simple handwheel for EdingCnc
 
 This software is written in CircuitPython for RP2040.
