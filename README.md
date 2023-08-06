@@ -10,8 +10,8 @@
   * GND
   3. Die 10 Funktionstasten des Handrades werden direkt mit den Eingängen des PiPico verbunden:
 
-| Eingang        | Funktion |
-| ------------- |:-------------:|
+| Eingang | Funktion |
+| --- |:-------------:|
 | GP6 | X Achse |
 | GP5 | Y Achse |
 | GP4 | Z Achse |
@@ -28,7 +28,7 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
   4.  Die Tasten des Handrads senden per USB Tastatur-Befehle an die Software. Dazu wird der USB Anschluss des PiPico direkt mit dem PC verbunden.
   5.  Softwarevorbereitung:
   * Installation von Circuit-Python auf dem PiPico: [Link](https://www.elektronik-kompendium.de/sites/raspberry-pi/2706221.htm)
-  * Als Nächstes müssen die Dateien im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
+  * Als Nächstes müssen die [Dateien](https://github.com/TheBlueManCoding/tshwEdingCnc/tree/199bb3092f33bc8e6d63e5b14984a9f44689c26b/src) im Repository auf das USB Laufwerk des PiPico kopiert werden (Hauptverzeichnis)
 ![Handwheel](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/67d1aaba23f07c7498afed532d94e842163adbea/img/FolderStructure.png)
 
 
