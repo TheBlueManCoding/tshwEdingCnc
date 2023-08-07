@@ -1,3 +1,5 @@
+Based on: http://www.talla83.de/Tshw.html
+
 [English version](#english)
 
 # Deutsch
@@ -42,7 +44,7 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
 ![Handrad, geöffnet](https://github.com/TheBlueManCoding/tshwEdingCnc/blob/main/img/Handrad_innen.jpg)
 
 # English
-## Tom simple handweel für EdingCnc using the Rasberry-Pi Pico
+## Tom simple handwheel für EdingCnc using the Rasberry-Pi Pico
 ### Functionality:
   1.  The rotary encoder is directly connected to the inputs of the eding-cnc circuit board.
    * +5V 
@@ -52,7 +54,7 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
   2.  The emergency stop is connected in parallel to the other emergency stops. The controller input has to be configured to NO (normally-open). 
    * ESTOP
    * GND
-  3. The 10 buttons of the handweel are directly connected to the picos input pins:
+  3. The 10 buttons of the handwheel are directly connected to the picos input pins:
 
 | input | function |
 | --- |:-------------:|
@@ -69,7 +71,7 @@ Die Tasten Start und Stop funktionieren nur, wenn sie zusammen mit der Seitentas
 
 The keys start and stop only work if pressed simultaneously with the side-button.
 
-  4.  The keys of the handweel directly send inputs to the computer using the adafruit-hid libary. For that the Pico has to be directly connected to the PC via its USB connector and a micro-USB cable.
+  4.  The keys of the handwheel directly send inputs to the computer using the adafruit-hid libary. For that the Pico has to be directly connected to the PC via its USB connector and a micro-USB cable.
   5.  Preparation of the Pico:
    * Installation-process of Circuit-Python on the Pico: [Link](https://www.diyprojectslab.com/raspberry-pi-pico-with-circuitpython/)
    * Next the [Files](https://github.com/TheBlueManCoding/tshwEdingCnc/tree/main/src) from the Repository have to be copied to the drive of the Pico (root directory)
